@@ -12,6 +12,20 @@ st.title("Laptop Price Predictor 💻")
 pipe=pickle.load(open("pipe.pkl","rb"))
 df=pickle.load(open("df.pkl","rb"))
 
+# Define CSS styling
+css_style = """
+<style>
+.st-emotion-cache-1r4qj8v {
+   background-image: url('thumb-1920-1338701.png');
+    background-size: cover;  /* Adjust the image size to cover the entire container */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Do not repeat the image *
+}
+</style>
+"""
+# Apply CSS styling
+st.markdown(css_style, unsafe_allow_html=True)
+
 # making 3 cols left_column, middle_column, right_column
 left_column, middle_column, right_column = st.columns(3)
 with left_column:
